@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe Game</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="TicTacToe.css">
+
+</head>
+
+<body>
+
+    <!-- PLAYER NAME POPUP -->
+    <div class="player-popup" id="playerPopup">
+
+        <div class="popup-content">
+
+            <h1>Tic Tac Toe</h1>
+
+            <p>Enter player names to start the game</p>
+
+            <input type="text" id="playerXInput"
+                placeholder="Enter Player X Name">
+
+            <input type="text" id="playerOInput"
+                placeholder="Enter Player O Name">
+
+            <button id="startGameBtn">
+                Start Game
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN GAME CONTAINER -->
+    <div class="main-container">
+
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+
+            <!-- TURN INDICATOR -->
+            <div class="turn-box">
+
+                <h2>Current Turn</h2>
+
+                <p id="status">
+                    Player X's Turn
+                </p>
+
+            </div>
+
+            <!-- SCORE BOARD -->
+            <div class="score-box">
+
+                <h2>Match Statistics</h2>
+
+                <div class="score-item">
+
+                    <span id="playerXName">
+                        Player X
+                    </span>
+
+                    <span id="playerXStats">
+                        Wins: 0 | Losses: 0
+                    </span>
+
+                </div>
+
+                <div class="score-item">
+
+                    <span id="playerOName">
+                        Player O
+                    </span>
+
+                    <span id="playerOStats">
+                        Wins: 0 | Losses: 0
+                    </span>
+
+                </div>
+
+                <div class="score-item total">
+
+                    <span>Total Matches</span>
+
+                    <span id="totalMatches">
+                        0
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- RESET BUTTON -->
+            <button id="restartBtn">
+                Restart Game
+            </button>
+
+        </div>
+
+        <!-- GAME BOARD -->
+        <div class="game-board-container">
+
+            <div class="board">
+
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="TicTacToe.js"></script>
+
+</body>
+
+</html>
